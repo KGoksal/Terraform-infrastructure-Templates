@@ -1,5 +1,5 @@
 dynamic "ingress" {
-  for_each = local.ingress_rules
+  for_each = local.ingress_rules 
   content {
     description = ingress.value.description
     from_port   = ingress.value.port
